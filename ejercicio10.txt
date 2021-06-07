@@ -1,0 +1,31 @@
+Algoritmo ejercicio10
+	Mostrar "Ingresar numeros hasta llegar a 1000"
+	almacenSuma = 0
+	contadorM6 = 0
+	almacenSuma1a10 = 0
+	Hacer
+		Mostrar "Ingresar un numero entero"
+		Leer numero
+		
+		
+		almacenSuma = almacenSuma + numero
+		
+		//multiplos y menores de 10
+		si numero % 6 = 0 Entonces
+			contadorM6 = contadorM6 + 1
+		SiNo
+			si numero >= 1 y numero <= 10 Entonces
+				almacenSuma1a10 = almacenSuma1a10 + numero
+				//Mostrar "La suma de los numeros recaudados hasta el momento es de ",almacenSuma, " faltan ",(1000 - almacenSuma)
+			FinSi
+		FinSi
+		
+		Mostrar "La suma de los numeros recaudados hasta el momento es de ",almacenSuma, " faltan ",(1000 - almacenSuma)
+		
+	Hasta Que almacenSuma = 1000 y almacenSuma < 1001
+	
+	Mostrar "Segun los datos recaudados"
+	Mostrar "La cantidad de multiplos de 6 es de: ",contadorM6
+	Mostrar "La suma de los numeros entre 1 y 10 es de: ",almacenSuma1a10
+	
+FinAlgoritmo
